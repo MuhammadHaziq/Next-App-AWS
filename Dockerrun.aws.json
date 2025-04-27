@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": 3,
+  "containerDefinitions": [
+    {
+      "name": "next-app",
+      "image": "muhammadhaziq/next-app:latest",
+      "hostname": "next-app",
+      "essential": false
+    },
+    {
+      "name": "nginx",
+      "image": "muhammadhaziq/portfolio-nginx:latest",
+      "hostname": "nginx",
+      "essential": true
+    }
+  ]
+}

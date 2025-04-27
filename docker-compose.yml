@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  next-app:
+    image: "muhammadhaziq/portfolio:latest"
+    mem_limit: 128m
+    hostname: next-app
+  nginx:
+    image: "muhammadhaziq/portfolio-nginx:latest"
+    mem_limit: 128m
+    hostname: nginx
+    ports:
+      - "80:80"
+  restart: always
+  depends_on:
+    - next-app
