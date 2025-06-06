@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import financeThat from "@/public/financeThat.jpeg";
+import laptopzone from "@/public/laptopzone.jpeg";
+import kyrioPos from "@/public/kyriopos.jpeg";
+import insuanceMarket from "@/public/insurancemarket.png";
 
 export const links = [
   {
@@ -35,52 +36,63 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Senior Full Stack Developer",
+    location: "UAE, Dubai",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Working with TypeScript and Sequelize ORM with MySQL, currently I am working on fintech modules. I write Postman test cases and integrate payment gateways, including Apple Pay, checkout, TAP in an insurance project. I also develop cron jobs to fetch data from third-party APIs. As a senior developer, I focus on code refactoring and optimization to enhance application performance.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023 - present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Senior Full Stack Developer",
+    location: "Pakistan, Lahore",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I’m a Senior Software Engineer at Nextbridge with full-stack expertise in Node.js, Express.js, Nest.js, React.js, and Angular CLI. I’m proficient in TypeScript, Redux.js, MongoDB, and MariaDB, with a strong command of Git, Sass, and Tailwind CSS. I focus on building scalable, maintainable solutions and stay updated with modern web development trends to deliver impactful projects.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2021 - 2023",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Pakistan, Lahore",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "As a Senior Software Engineer at Ecologix, I specialize in Node.js, Express.js, Vue.js, and React.js with strong skills in Redux, Git, Sass, and Tailwind CSS. I’ve led projects, managed MongoDB and Oracle databases, and delivered scalable solutions. With a passion for innovation, I continuously explore new technologies to drive impactful, cutting-edge web application development.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "20218 - 2021",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "InsuranceMarket",
+    link: "https://insurancemarket.ae/",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Worked as Senior Backend Developer on InsuranceMarket.ae, integrating checkout and Tappay payment gateways, optimizing code, refactoring logic, and resolving complex promises and race conditions.",
+    tags: ["Node", "Express", "Typescript", "MySQL", "Payment Gateway"],
+    imageUrl: insuanceMarket,
   },
   {
-    title: "rmtDev",
+    title: "FinanceThat",
+    link: "https://financethat.ca",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Lead front-end for a vehicle listing platform, built UI components, integrated Stripe for ad boosting, and used Flinks for identity verification and credit reports. Currently running in Canda and US market.",
+    tags: ["React", "Redux", "Postgres", "Scss", "Phython", "Django"],
+    imageUrl: financeThat,
   },
   {
-    title: "Word Analytics",
+    title: "Laptopzone",
+    link: "https://laptopzoneusa.com",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "This is Selling and Repairing Website for Laptops and Mobile Phones. Currently running in US market.",
+    tags: ["React", "Redux", "Node.js", "Css", "Orcale", "Express"],
+    imageUrl: laptopzone,
+  },
+  {
+    title: "Kyrio POS",
+    link: "https://dashboard.kyriopos.com/#/summary",
+    description:
+      "Developed a Loyverse POS clone as Full-Stack Developer using React, Redux, and Express. Managed user roles, sales reports, and filtered data using Mongoose relationships. Currently running in UK market.",
+    tags: ["React", "scss", "Graphs", "Node.js", "Express", "MongoDB"],
+    imageUrl: kyrioPos,
   },
 ] as const;
 
